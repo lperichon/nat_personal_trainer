@@ -349,7 +349,7 @@
                         </table>
                         <p align="center" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 14px; margin: 0; padding: 0; color:#bcc1ae; font-weight: normal;">Recomendá esta página a un amigo. ¡Gracias!
                         <span id="send_button">
-                          <script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:send href="http://www.facebook.com/pages/Personal-Y%C3%B4ga-Trainer/157255344335372" font=""></fb:send>
+                          <fb:send href="http://www.facebook.com/pages/Personal-Y%C3%B4ga-Trainer/157255344335372" font=""></fb:send>
                         </span>
                         </p>
                         <table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -365,5 +365,25 @@
     </tr>
 </table>
 <!--/100% body table-->
+<div id="fb-root"></div>
+
+<script>
+	window.fbAsyncInit = function() {
+		FB.init({appId: "117385141676358",
+                           status: true,
+                           cookie: true,
+                           xfbml: true});
+        window.setTimeout(function() {
+          FB.Canvas.setAutoResize();
+        }, 250);
+		//FB.Canvas.setSize();
+	};
+	(function() {
+		var e = document.createElement('script'); e.async = true;
+		e.src = document.location.protocol +
+			'//connect.facebook.net/es_LA/all.js';
+		document.getElementById('fb-root').appendChild(e);
+	}());
+</script>
 </body>
 </html>
