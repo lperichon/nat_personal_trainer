@@ -10,6 +10,10 @@ class NatPersonalTrainerApp < Sinatra::Base
     erb(:newsletter_20110421)
   end
 
+  get '/facebook' do
+    erb(:facebook)
+  end
+
   post '/facebook' do
     erb(:facebook)
   end
